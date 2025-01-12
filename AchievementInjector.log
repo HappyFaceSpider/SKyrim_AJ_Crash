@@ -1,98 +1,98 @@
-[2025-01-12 14:16:07.778] [log] [info] [log.cpp:42] Debug enabled.
-[2025-01-12 14:16:07.778] [log] [debug] [settings.h:44] bDebug: true, bGlobal: false, bUseDebugger: false, bUsePopup: true, bMute: false, bDelayNewGameAlert: true, bShowHidden: false, iNotificationSound: UISkillIncreaseSD
-[2025-01-12 14:16:07.778] [log] [info] [Plugin.cpp:171] Detected AE version 1.6.1170
-[2025-01-12 14:16:12.243] [log] [debug] [Papyrus.cpp:54] Binding Papyrus Static functions...
-[2025-01-12 14:16:13.669] [log] [info] [LocalizationManager.cpp:7] Game settings is EN.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Awakening.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Beyond Death.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Kindred Judgment.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Lost to the Ages.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Soul Tear.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Auriel's Bow.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Werewolf Mastered.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type InvestedPerkPoints in Werewolf Mastered.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Vampire Mastered.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type InvestedPerkPoints in Vampire Mastered.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement A New You.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Legend.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Outlander.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Temple of Miraak.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Path of Knowledge.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement At the Summit of Apocrypha.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Aspect.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hidden Knowledge.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Stalhrim Crafter.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragonrider.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Raven Rock Owner.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Solstheim Explorer.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Proud Parent.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Landowner.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Architect.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Land Baron.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master Architect.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Unbound.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Bleak Falls Barrow.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Way of the Voice.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Diplomatic Immunity.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Alduin's Wall.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Elder Knowledge.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Fallen.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragonslayer.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Take Up Arms.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Blood Oath.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Glory of the Dead.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Gatekeeper.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Revealing the Unseen.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Eye of Magnus.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Taking Care of Business.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Darkness Returns.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement One with the Shadows.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement With Friends Like These.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Bound Until Death.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hail Sithis!.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Taking Sides.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement War Hero.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hero of Skyrim.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Sideways.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hero of the People.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hard Worker.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Thief.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Snake Tongue.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Blessed.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Standing Stones.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Citizen.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Wanted.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Married.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Artificer.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Golden Touch.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Delver.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Skill Master.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Explorer.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Reader.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Daedric Influence.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Oblivion Walker.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Soul.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Hunter.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Words of Power.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Thu'um Master.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Apprentice.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Adept.
-[2025-01-12 14:16:13.673] [log] [debug] [Achievement.cpp:62] Analyzing achievement Expert.
-[2025-01-12 14:16:13.674] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master.
-[2025-01-12 14:16:13.674] [log] [debug] [Plugin.cpp:137] Achievement group Dawnguard has 10 achievements
-[2025-01-12 14:16:13.674] [log] [debug] [Plugin.cpp:137] Achievement group Dragonborn has 10 achievements
-[2025-01-12 14:16:13.674] [log] [debug] [Plugin.cpp:137] Achievement group Hearthfire has 5 achievements
-[2025-01-12 14:16:13.674] [log] [debug] [Plugin.cpp:137] Achievement group Skyrim has 50 achievements
-[2025-01-12 14:16:13.674] [log] [debug] [AchievementWidget.cpp:33] Widget AchievementWidget Registered.
-[2025-01-12 14:16:13.674] [log] [info] [AchievementMenu.cpp:193] Register class Scaleform::AchievementMenuInjector
-[2025-01-12 14:16:13.676] [log] [debug] [AchievementMenu.cpp:60] Registered AchievementMenu
+[2025-01-12 14:39:45.382] [log] [info] [log.cpp:42] Debug enabled.
+[2025-01-12 14:39:45.382] [log] [debug] [settings.h:44] bDebug: true, bGlobal: false, bUseDebugger: false, bUsePopup: true, bMute: false, bDelayNewGameAlert: true, bShowHidden: false, iNotificationSound: UISkillIncreaseSD
+[2025-01-12 14:39:45.382] [log] [info] [Plugin.cpp:171] Detected AE version 1.6.1170
+[2025-01-12 14:39:50.303] [log] [debug] [Papyrus.cpp:54] Binding Papyrus Static functions...
+[2025-01-12 14:39:52.135] [log] [info] [LocalizationManager.cpp:7] Game settings is EN.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Awakening.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Beyond Death.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Kindred Judgment.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Lost to the Ages.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Soul Tear.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Auriel's Bow.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Werewolf Mastered.
+[2025-01-12 14:39:52.138] [log] [warning] [Achievement.cpp:192] Unknown condition type InvestedPerkPoints in Werewolf Mastered.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Vampire Mastered.
+[2025-01-12 14:39:52.138] [log] [warning] [Achievement.cpp:192] Unknown condition type InvestedPerkPoints in Vampire Mastered.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement A New You.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Legend.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Outlander.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Temple of Miraak.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Path of Knowledge.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement At the Summit of Apocrypha.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Aspect.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hidden Knowledge.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Stalhrim Crafter.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragonrider.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Raven Rock Owner.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Solstheim Explorer.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Proud Parent.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Landowner.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Architect.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Land Baron.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master Architect.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Unbound.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Bleak Falls Barrow.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Way of the Voice.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Diplomatic Immunity.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Alduin's Wall.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Elder Knowledge.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Fallen.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragonslayer.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Take Up Arms.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Blood Oath.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Glory of the Dead.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Gatekeeper.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Revealing the Unseen.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement The Eye of Magnus.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Taking Care of Business.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Darkness Returns.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement One with the Shadows.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement With Friends Like These.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Bound Until Death.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hail Sithis!.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Taking Sides.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement War Hero.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hero of Skyrim.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Sideways.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hero of the People.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Hard Worker.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Thief.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Snake Tongue.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Blessed.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Standing Stones.
+[2025-01-12 14:39:52.138] [log] [debug] [Achievement.cpp:62] Analyzing achievement Citizen.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Wanted.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Married.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Artificer.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [warning] [Achievement.cpp:192] Unknown condition type PlayerCrime in Master Criminal.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Golden Touch.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Delver.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Skill Master.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Explorer.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Reader.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Daedric Influence.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Oblivion Walker.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Soul.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Dragon Hunter.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Words of Power.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Thu'um Master.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Apprentice.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Adept.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Expert.
+[2025-01-12 14:39:52.139] [log] [debug] [Achievement.cpp:62] Analyzing achievement Master.
+[2025-01-12 14:39:52.139] [log] [debug] [Plugin.cpp:137] Achievement group Dawnguard has 10 achievements
+[2025-01-12 14:39:52.139] [log] [debug] [Plugin.cpp:137] Achievement group Dragonborn has 10 achievements
+[2025-01-12 14:39:52.139] [log] [debug] [Plugin.cpp:137] Achievement group Hearthfire has 5 achievements
+[2025-01-12 14:39:52.139] [log] [debug] [Plugin.cpp:137] Achievement group Skyrim has 50 achievements
+[2025-01-12 14:39:52.139] [log] [debug] [AchievementWidget.cpp:33] Widget AchievementWidget Registered.
+[2025-01-12 14:39:52.139] [log] [info] [AchievementMenu.cpp:193] Register class Scaleform::AchievementMenuInjector
+[2025-01-12 14:39:52.141] [log] [debug] [AchievementMenu.cpp:60] Registered AchievementMenu

@@ -1,0 +1,1208 @@
+Skyrim SSE v1.6.1170
+CrashLoggerSSE v1-14-1-0 May 18 2024 23:00:58
+
+Unhandled exception at 0x7FF9547F837A KERNELBASE.dll+00C837A	nop [rax+rax*1], eax
+
+SYSTEM SPECS:
+	OS: Microsoft Windows 11 Home v10.0.26100
+	CPU: AuthenticAMD AMD Ryzen 5 7600X 6-Core Processor             
+	GPU #1: AMD AMD Radeon RX 7800 XT
+	GPU #2: AMD Raphael
+	GPU #3: Microsoft Basic Render Driver
+	PHYSICAL MEMORY: 16.99 GB/31.07 GB
+	GPU MEMORY: 0.13/15.03 GB
+	Detected Virtual Machine: Thread Expert (100%)
+
+PROBABLE CALL STACK:
+	[ 0] 0x7FF9547F837A          KERNELBASE.dll+00C837A
+	[ 1] 0x7FF944F55267        VCRUNTIME140.dll+0005267
+	[ 2] 0x7FF8A24A1DE8 AchievementInjector.dll+0071DE8
+	[ 3] 0x7FF8A249BA41 AchievementInjector.dll+006BA41	cmp byte ptr [rbp-0x78], 0x00 |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\detail\input\parser.hpp:137 ?parse@?$parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@json_abi_v3_11_3@nlohmann@@QEAAX_NAEAV?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@34@@Z
+	[ 4] 0x7FF8A24DDA9A AchievementInjector.dll+00ADA9A	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Serializer.cpp:153 ?DeserializeAchievementData_GLOBAL@Serializer@@QEAA?AUSerializedAchievement@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	[ 5] 0x7FF8A24DCC8F AchievementInjector.dll+00ACC8F	mov rcx, [rsp+0x2B0] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Serializer.cpp:123 ?DeserializeAchievementData@Serializer@@QEAA?AUSerializedAchievement@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	[ 6] 0x7FF8A243BC4B AchievementInjector.dll+000BC4B	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Achievement.cpp:398 ?ToString@Achievement@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	[ 7] 0x7FF8A2484DD0 AchievementInjector.dll+0054DD0	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:55 ?ToString@AchievementGroup@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	[ 8] 0x7FF8A24857EB AchievementInjector.dll+00557EB	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:103 ?ToString@AchievementManager@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	[ 9] 0x7FF8A24858FA AchievementInjector.dll+00558FA	lea rcx, [rbx+0x50] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:109 ?UpdateCache@AchievementManager@@QEAAXXZ
+	[10] 0x7FF8A24D27C7 AchievementInjector.dll+00A27C7	mov eax, [rbx+rdi*1] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Plugin.cpp:146 ?MessageHandler@@YAXPEAUMessage@MessagingInterface@SKSE@@@Z
+	[11] 0x7FF8B4CB2BF2     skse64_1_6_1170.dll+0082BF2
+	[12] 0x7FF8B4C3A6B8     skse64_1_6_1170.dll+000A6B8
+	[13] 0x7FF647BD2FCC            SkyrimSE.exe+0642FCC -> 36553+0x3FC	cmp dword ptr [0x00007FF64AB811D0], 0x02
+	[14] 0x7FF647BDC5BC            SkyrimSE.exe+064C5BC -> 36644+0x1C	xor eax, eax
+	[15] 0x7FF648260DBD            SkyrimSE.exe+0CD0DBD -> 68445+0x3D	mov rcx, [0x00007FF64A75C318]
+	[16] 0x7FF9566FE8D7            KERNEL32.DLL+002E8D7
+	[17] 0x7FF9571FFBCC               ntdll.dll+00DFBCC
+
+REGISTERS:
+	RAX 0x0                (size_t) [0]
+	RCX 0x3B5C9FD5F0       (void*)
+	RDX 0x7FF64855D2EE     (void* -> SkyrimSE.exe+0FCD2EE	jmp 0x00007FF64855D56A)
+	RBX 0x3B5C9FE348       (void*)
+	RSP 0x3B5C9FE220       (void*)
+	RBP 0x4                (size_t) [4]
+	RSI 0x1                (size_t) [1]
+	RDI 0xE06D7363         (size_t) [3765269347]
+	R8  0x7FF648576A10     (void* -> SkyrimSE.exe+0FE6A10	movzx r12d, al)
+	R9  0x7FF8A2621FB8     (char*) "Achievement group {} has {} achievements"
+	R10 0x28               (size_t) [40]
+	R11 0x3B5C9FD5E0       (void*)
+	R12 0x7FF8A2430000     (void*)
+	R13 0x0                (size_t) [0]
+	R14 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	R15 0x1F               (size_t) [31]
+
+STACK:
+	[RSP+0   ] 0x0                (size_t) [0]
+	[RSP+8   ] 0x3B5C9FE348       (void*)
+	[RSP+10  ] 0x1                (size_t) [1]
+	[RSP+18  ] 0x3B00000002       (size_t) [253403070466]
+	[RSP+20  ] 0x81E06D7363       (size_t) [557816050531]
+	[RSP+28  ] 0x0                (size_t) [0]
+	[RSP+30  ] 0x7FF9547F837A     (void* -> KERNELBASE.dll+00C837A	nop [rax+rax*1], eax)
+	[RSP+38  ] 0x4                (size_t) [4]
+	[RSP+40  ] 0x19930520         (size_t) [429065504]
+	[RSP+48  ] 0x3B5C9FE450       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+50  ] 0x7FF8A2673B98     (void* -> AchievementInjector.dll+0243B98	add [rax], al |  _TI3?AVparse_error@detail@json_abi_v3_11_3@nlohmann@@_243B98)
+	[RSP+58  ] 0x7FF8A2430000     (void*)
+	[RSP+60  ] 0x0                (size_t) [0]
+	[RSP+68  ] 0x0                (size_t) [0]
+	[RSP+70  ] 0x0                (size_t) [0]
+	[RSP+78  ] 0x0                (size_t) [0]
+	[RSP+80  ] 0x0                (size_t) [0]
+	[RSP+88  ] 0x0                (size_t) [0]
+	[RSP+90  ] 0x0                (size_t) [0]
+	[RSP+98  ] 0x0                (size_t) [0]
+	[RSP+A0  ] 0x0                (size_t) [0]
+	[RSP+A8  ] 0x0                (size_t) [0]
+	[RSP+B0  ] 0x0                (size_t) [0]
+	[RSP+B8  ] 0x3B5C9FE480       (void*)
+	[RSP+C0  ] 0x4045184D5F4F     (size_t) [70665504644943]
+	[RSP+C8  ] 0x3B5C9FE480       (void*)
+	[RSP+D0  ] 0x7FF8A2685000     (void* -> AchievementInjector.dll+0255000	add [rax], dl |  ?$TSS0@?L@??DeleteValue@?$CSimpleIniTempl@DU?$SI_NoCase@D@@V?$SI_ConvertA@D@@@@QEAA_NPEBD00_N@Z@4HA_255000)
+	[RSP+D8  ] 0x19930520         (size_t) [429065504]
+	[RSP+E0  ] 0x3B5C9FE450       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+E8  ] 0x3B5C9FE480       (void*)
+	[RSP+F0  ] 0x7FF8A2673B98     (void* -> AchievementInjector.dll+0243B98	add [rax], al |  _TI3?AVparse_error@detail@json_abi_v3_11_3@nlohmann@@_243B98)
+	[RSP+F8  ] 0x7FF944F55267     (void* -> VCRUNTIME140.dll+0005267	mov rbx, [rsp+0x70])
+	[RSP+100 ] 0x3B5C9FE410       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+108 ] 0x7FF8A25EF230     (void* -> AchievementInjector.dll+01BF230	adc [rax+0x48], cl |  ??_7exception@std@@6B@_1BF230)
+	[RSP+110 ] 0x3B5C9FE450       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+118 ] 0xB2EDB2587AD3     (size_t) [196733969136339]
+	[RSP+120 ] 0x7FF8A2430000     (void*)
+	[RSP+128 ] 0x19930520         (size_t) [429065504]
+	[RSP+130 ] 0x3B5C9FE450       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+138 ] 0x7FF8A2673B98     (void* -> AchievementInjector.dll+0243B98	add [rax], al |  _TI3?AVparse_error@detail@json_abi_v3_11_3@nlohmann@@_243B98)
+	[RSP+140 ] 0x7FF8A2430000     (void*)
+	[RSP+148 ] 0x3B5C9FE9E0       (void*)
+	[RSP+150 ] 0x3B5C9FE5F0       (void*)
+	[RSP+158 ] 0x7FF8A24A1DE8     (void* -> AchievementInjector.dll+0071DE8	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\detail\input\parser.hpp:348 ??$sax_parse_internal@V?$json_sax_dom_parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@@detail@json_abi_v3_11_3@nlohmann@@@?$parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@json_abi_v3_11_3@nlohmann@@AEAA_NPEAV?$json_sax_dom_parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@@123@@Z)
+	[RSP+160 ] 0x3B5C9FE410       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+168 ] 0x0                (size_t) [0]
+	[RSP+170 ] 0x3B5C9FE410       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+178 ] 0x3B5C9FE9E0       (void*)
+	[RSP+180 ] 0x1                (size_t) [1]
+	[RSP+188 ] 0x2                (size_t) [2]
+	[RSP+190 ] 0x1                (size_t) [1]
+	[RSP+198 ] 0x7FF9571478B4     (void* -> ntdll.dll+00278B4	mov rbp, rax)
+	[RSP+1A0 ] 0x235F5530000      (void*)
+	[RSP+1A8 ] 0x23700000000      (void*)
+	[RSP+1B0 ] 0x1                (size_t) [1]
+	[RSP+1B8 ] 0x7FF900000000     (size_t) [140707423584256]
+	[RSP+1C0 ] 0x3B5C9FE410       (nlohmann::json_abi_v3_11_3::detail::parse_error*)
+	[RSP+1C8 ] 0x2371ED6ABD0      (void*)
+	[RSP+1D0 ] 0x0                (size_t) [0]
+	[RSP+1D8 ] 0x0                (size_t) [0]
+	[RSP+1E0 ] 0x0                (size_t) [0]
+	[RSP+1E8 ] 0x0                (size_t) [0]
+	[RSP+1F0 ] 0x7FF8A261DE70     (void* -> AchievementInjector.dll+01EDE70	add byte ptr [rdx+0x7FF8A249], 0x00 |  ??_7parse_error@detail@json_abi_v3_11_3@nlohmann@@6B@_1EDE70)
+	[RSP+1F8 ] 0x0                (size_t) [0]
+	[RSP+200 ] 0x0                (size_t) [0]
+	[RSP+208 ] 0x65               (size_t) [101]
+	[RSP+210 ] 0x7FF8A25EF290     (void* -> AchievementInjector.dll+01BF290	push rax |  ??_7runtime_error@std@@6B@_1BF290)
+	[RSP+218 ] 0x2371EE29520      (char*) "[json.exception.parse_error.101] parse error at line 1, column 1: attempting to parse an empty input; check that your input string or stream contains the expected JSON"
+	[RSP+220 ] 0x1                (size_t) [1]
+	[RSP+228 ] 0x1                (size_t) [1]
+	[RSP+230 ] 0x7FF8A261DE70     (void* -> AchievementInjector.dll+01EDE70	add byte ptr [rdx+0x7FF8A249], 0x00 |  ??_7parse_error@detail@json_abi_v3_11_3@nlohmann@@6B@_1EDE70)
+	[RSP+238 ] 0x0                (size_t) [0]
+	[RSP+240 ] 0x0                (size_t) [0]
+	[RSP+248 ] 0x65               (size_t) [101]
+	[RSP+250 ] 0x7FF8A25EF290     (void* -> AchievementInjector.dll+01BF290	push rax |  ??_7runtime_error@std@@6B@_1BF290)
+	[RSP+258 ] 0x2371EE28340      (char*) "[json.exception.parse_error.101] parse error at line 1, column 1: attempting to parse an empty input; check that your input string or stream contains the expected JSON"
+	[RSP+260 ] 0x1                (size_t) [1]
+	[RSP+268 ] 0x1                (size_t) [1]
+	[RSP+270 ] 0x7FF954C28E88     (void* -> ucrtbase.dll+0138E88	mov [rdx+rdx*1+0x237], bl)
+	[RSP+278 ] 0x3B5C9FF050       (char*) " "
+	[RSP+280 ] 0xCA8              (size_t) [3240]
+	[RSP+288 ] 0x7FF954C28E88     (void* -> ucrtbase.dll+0138E88	mov [rdx+rdx*1+0x237], bl)
+	[RSP+290 ] 0x2371ED82470      (char*) "attempting to parse an empty input; check that your input string or stream contains the expected JSON"
+	[RSP+298 ] 0x0                (size_t) [0]
+	[RSP+2A0 ] 0x65               (size_t) [101]
+	[RSP+2A8 ] 0x6F               (size_t) [111]
+	[RSP+2B0 ] 0x1                (size_t) [1]
+	[RSP+2B8 ] 0x1                (size_t) [1]
+	[RSP+2C0 ] 0x0                (size_t) [0]
+	[RSP+2C8 ] 0x6D               (size_t) [109]
+	[RSP+2D0 ] 0x3E303030302B553C (size_t) [4481134612758353212]
+	[RSP+2D8 ] 0x0                (size_t) [0]
+	[RSP+2E0 ] 0x8                (size_t) [8]
+	[RSP+2E8 ] 0xF                (size_t) [15]
+	[RSP+2F0 ] 0x3B5C9FE830       (std::basic_filebuf<char,std::char_traits<char> >*)
+	[RSP+2F8 ] 0x0                (size_t) [0]
+	[RSP+300 ] 0x1                (size_t) [1]
+	[RSP+308 ] 0x0                (size_t) [0]
+	[RSP+310 ] 0x3B5C9FE610       (void*)
+	[RSP+318 ] 0x7FF954B0CAE2     (void* -> ucrtbase.dll+001CAE2	mov eax, r14d)
+	[RSP+320 ] 0x0                (size_t) [0]
+	[RSP+328 ] 0xB2EDB2587BA3     (size_t) [196733969136547]
+	[RSP+330 ] 0x1F               (size_t) [31]
+	[RSP+338 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+340 ] 0x3B5C9FF050       (char*) " "
+	[RSP+348 ] 0x3B5C9FF600       (void*)
+	[RSP+350 ] 0x3B5C9FE9E0       (void*)
+	[RSP+358 ] 0x1                (size_t) [1]
+	[RSP+360 ] 0x3B5C9FE690       (void*)
+	[RSP+368 ] 0x7FF8A249BA41     (void* -> AchievementInjector.dll+006BA41	cmp byte ptr [rbp-0x78], 0x00 |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\detail\input\parser.hpp:137 ?parse@?$parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@json_abi_v3_11_3@nlohmann@@QEAAX_NAEAV?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@34@@Z)
+	[RSP+370 ] 0x237105042F0      (void*)
+	[RSP+378 ] 0x1                (size_t) [1]
+	[RSP+380 ] 0x7FF8A2684888     (void* -> AchievementInjector.dll+0254888	add [rax], al |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254888)
+	[RSP+388 ] 0x7FF944EF5EA5     (void* -> MSVCP140.dll+0035EA5	jmp 0x00007FF944EF5EC3)
+	[RSP+390 ] 0x3B5C9FE9E0       (void*)
+	[RSP+398 ] 0x7FF8A247EB01     (void* -> AchievementInjector.dll+004EB01	lea rax, [rbx+rdi*1] |  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xutility:4640 ??$_Copy_memmove@PEADPEAD@std@@YAPEADPEAD00@Z C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\charconv:39 ??$_Copy_memmove@PEADPEAD@std@@YAPEADPEAD00@Z)
+	[RSP+3A0 ] 0x1                (size_t) [1]
+	[RSP+3A8 ] 0x7FF954B0ACD6     (void* -> ucrtbase.dll+001ACD6	test eax, eax)
+	[RSP+3B0 ] 0x237105042F0      (void*)
+	[RSP+3B8 ] 0x3B5C9FE640       (void*)
+	[RSP+3C0 ] 0x235F1708D60      (void*)
+	[RSP+3C8 ] 0x7FF8A24A4530     (void* -> AchievementInjector.dll+0074530	mov rcx, [rbx] |  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector:850 ??$_Emplace_reallocate@D@?$vector@DV?$allocator@D@std@@@std@@AEAAPEADQEAD$$QEAD@Z)
+	[RSP+3D0 ] 0x7FF8A2684888     (void* -> AchievementInjector.dll+0254888	add [rax], al |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254888)
+	[RSP+3D8 ] 0x0                (size_t) [0]
+	[RSP+3E0 ] 0x0                (size_t) [0]
+	[RSP+3E8 ] 0x0                (size_t) [0]
+	[RSP+3F0 ] 0x0                (size_t) [0]
+	[RSP+3F8 ] 0x3B5C9F0101       (void*)
+	[RSP+400 ] 0x3B5C9FF050       (char*) " "
+	[RSP+408 ] 0x0                (size_t) [0]
+	[RSP+410 ] 0x3B5C9FEA28       (void*)
+	[RSP+418 ] 0x7FF8A249F073     (void* -> AchievementInjector.dll+006F073	mov eax, [rbx+0x14] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\detail\input\lexer.hpp:1358 ?get@?$lexer@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@json_abi_v3_11_3@nlohmann@@AEAAHXZ)
+	[RSP+420 ] 0x0                (size_t) [0]
+	[RSP+428 ] 0x3B5C9FE9E0       (void*)
+	[RSP+430 ] 0x3B5C9FF600       (void*)
+	[RSP+438 ] 0x3B5C9FE9E0       (void*)
+	[RSP+440 ] 0x3B5C9FEA28       (void*)
+	[RSP+448 ] 0x7FF8A249DB5B     (void* -> AchievementInjector.dll+006DB5B	add rsp, 0x30 |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\detail\input\lexer.hpp:1596 ?scan@?$lexer@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@json_abi_v3_11_3@nlohmann@@QEAA?AW4token_type@?$lexer_base@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@@234@XZ)
+	[RSP+450 ] 0x2371EB63F00      (void*)
+	[RSP+458 ] 0x3B5C9FE9E0       (void*)
+	[RSP+460 ] 0x2371EBB4440      (void*)
+	[RSP+468 ] 0x0                (size_t) [0]
+	[RSP+470 ] 0x237105042F0      (void*)
+	[RSP+478 ] 0xB2EDB2587E53     (size_t) [196733969137235]
+	[RSP+480 ] 0x3B5C9FE990       (void*)
+	[RSP+488 ] 0x7FF8A249F8FB     (void* -> AchievementInjector.dll+006F8FB	mov [rdi+0x40], eax |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\nlohmann\json.hpp:139 ??$parser@Vinput_stream_adapter@detail@json_abi_v3_11_3@nlohmann@@@?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@CA?AV?$parser@V?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@json_abi_v3_11_3@nlohmann@@Vinput_stream_adapter@detail@23@@detail@12@Vinput_stream_adapter@412@V?$function@$$A6A_NHW4parse_event_t@detail@json_abi_v3_11_3@nlohmann@@AEAV?$basic_json@Vmap@std@@Vvector@2@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@_N_J_KNVallocator@2@Uadl_serializer@json_abi_v3_11_3@nlohmann@@V?$vector@EV?$allocator@E@std@@@2@X@34@@Z@std@@_N2@Z)
+	[RSP+490 ] 0x3B5C9FE990       (void*)
+	[RSP+498 ] 0x7FF8A249D582     (void* -> AchievementInjector.dll+006D582	test rax, rax |  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\__msvc_filebuf.hpp:292 ?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QEAAPEAV12@PEBDHH@Z)
+	[RSP+4A0 ] 0x3B5C9FE9E0       (void*)
+	[RSP+4A8 ] 0x235F54A5D90      (std::codecvt<char,char,_Mbstatet>*)
+	[RSP+4B0 ] 0x3B5C9FE820       (void*)
+	[RSP+4B8 ] 0x3B5C9FE6E8       (void*)
+	[RSP+4C0 ] 0x3B5C9FE9E0       (void*)
+	[RSP+4C8 ] 0x23710504300      (void*)
+	[RSP+4D0 ] 0x1F               (size_t) [31]
+	[RSP+4D8 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+4E0 ] 0x3B5C9FF050       (char*) " "
+	[RSP+4E8 ] 0x3B5C9FF600       (void*)
+	[RSP+4F0 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+4F8 ] 0x0                (size_t) [0]
+	[RSP+500 ] 0x0                (size_t) [0]
+	[RSP+508 ] 0x7FF954AFDDAB     (void* -> ucrtbase.dll+000DDAB	test eax, eax)
+	[RSP+510 ] 0xB2EDB2587DB3     (size_t) [196733969137075]
+	[RSP+518 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+520 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+528 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+530 ] 0x3B5C9FF030       (void*)
+	[RSP+538 ] 0x7FF8A24DDA9A     (void* -> AchievementInjector.dll+00ADA9A	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Serializer.cpp:153 ?DeserializeAchievementData_GLOBAL@Serializer@@QEAA?AUSerializedAchievement@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+	[RSP+540 ] 0x3B5C9FE9E0       (void*)
+	[RSP+548 ] 0x7FF8A2684888     (void* -> AchievementInjector.dll+0254888	add [rax], al |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254888)
+	[RSP+550 ] 0x3B5C9FE990       (void*)
+	[RSP+558 ] 0x0                (size_t) [0]
+	[RSP+560 ] 0x0                (size_t) [0]
+	[RSP+568 ] 0x0                (size_t) [0]
+	[RSP+570 ] 0x0                (size_t) [0]
+	[RSP+578 ] 0x0                (size_t) [0]
+	[RSP+580 ] 0x0                (size_t) [0]
+	[RSP+588 ] 0x0                (size_t) [0]
+	[RSP+590 ] 0x3B5C9FEDA0       (void*)
+	[RSP+598 ] 0x0                (size_t) [0]
+	[RSP+5A0 ] 0x3B5C9FEDA0       (void*)
+	[RSP+5A8 ] 0x3B5C9FED60       (char*) "Unbound"
+	[RSP+5B0 ] 0x0                (size_t) [0]
+	[RSP+5B8 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+5C0 ] 0x3B5C9FEDA0       (void*)
+	[RSP+5C8 ] 0x0                (size_t) [0]
+	[RSP+5D0 ] 0x0                (size_t) [0]
+	[RSP+5D8 ] 0x0                (size_t) [0]
+	[RSP+5E0 ] 0x0                (size_t) [0]
+	[RSP+5E8 ] 0x0                (size_t) [0]
+	[RSP+5F0 ] 0x0                (size_t) [0]
+	[RSP+5F8 ] 0x0                (size_t) [0]
+	[RSP+600 ] 0x7FF8A261DD88     (void* -> AchievementInjector.dll+01EDD88	add [rax], al |  ??_8?$basic_ifstream@DU?$char_traits@D@std@@@std@@7B@_1EDD88)
+	[RSP+608 ] 0x0                (size_t) [0]
+	[RSP+610 ] 0x7FF8A25EFAC8     (void* -> AchievementInjector.dll+01BFAC8	and [rdx+0x7FF8A24A], ch |  ??_7?$basic_filebuf@DU?$char_traits@D@std@@@std@@6B@_1BFAC8)
+	[RSP+618 ] 0x0                (size_t) [0]
+	[RSP+620 ] 0x0                (size_t) [0]
+	[RSP+628 ] 0x237105042F8      (void*)
+	[RSP+630 ] 0x237105042F8      (void*)
+	[RSP+638 ] 0x0                (size_t) [0]
+	[RSP+640 ] 0x0                (size_t) [0]
+	[RSP+648 ] 0x237105042F0      (void*)
+	[RSP+650 ] 0x237105042F0      (void*)
+	[RSP+658 ] 0x0                (size_t) [0]
+	[RSP+660 ] 0x23710504300      (void*)
+	[RSP+668 ] 0x23710504300      (void*)
+	[RSP+670 ] 0x237116FB8D0      (char*) "i"
+	[RSP+678 ] 0x0                (size_t) [0]
+	[RSP+680 ] 0xF5530080         (size_t) [4115857536]
+	[RSP+688 ] 0x7F0100000000     (size_t) [139642271694848]
+	[RSP+690 ] 0x237105042F0      (void*)
+	[RSP+698 ] 0x0                (size_t) [0]
+	[RSP+6A0 ] 0x3B5C9FE9E0       (void*)
+	[RSP+6A8 ] 0x6D0              (size_t) [1744]
+	[RSP+6B0 ] 0x7FF8A25EFB48     (void* -> AchievementInjector.dll+01BFB48	or [rdx+0x7FF8A24A], ch |  ??_7?$basic_ifstream@DU?$char_traits@D@std@@@std@@6B@_1BFB48)
+	[RSP+6B8 ] 0x0                (size_t) [0]
+	[RSP+6C0 ] 0x0                (size_t) [0]
+	[RSP+6C8 ] 0x201              (size_t) [513]
+	[RSP+6D0 ] 0x6                (size_t) [6]
+	[RSP+6D8 ] 0x0                (size_t) [0]
+	[RSP+6E0 ] 0x0                (size_t) [0]
+	[RSP+6E8 ] 0x0                (size_t) [0]
+	[RSP+6F0 ] 0x237116FB510      (char*) "d"
+	[RSP+6F8 ] 0x3B5C9FE830       (std::basic_filebuf<char,std::char_traits<char> >*)
+	[RSP+700 ] 0x0                (size_t) [0]
+	[RSP+708 ] 0x7FF957147820     (void* -> ntdll.dll+0027820	cmp eax, [rsi])
+	[RSP+710 ] 0x235F5530000      (void*)
+	[RSP+718 ] 0x3B00000000       (size_t) [253403070464]
+	[RSP+720 ] 0x6A6              (size_t) [1702]
+	[RSP+728 ] 0x3B00000000       (size_t) [253403070464]
+	[RSP+730 ] 0x27               (size_t) [39]
+	[RSP+738 ] 0x7FF957296F4A     (void* -> ntdll.dll+0176F4A	add [rax], al)
+	[RSP+740 ] 0x0                (size_t) [0]
+	[RSP+748 ] 0x3B5C9FED60       (char*) "Unbound"
+	[RSP+750 ] 0x2371EE69100      (void*)
+	[RSP+758 ] 0x0                (size_t) [0]
+	[RSP+760 ] 0x0                (size_t) [0]
+	[RSP+768 ] 0xF                (size_t) [15]
+	[RSP+770 ] 0x0                (size_t) [0]
+	[RSP+778 ] 0x2371EBB4440      (void*)
+	[RSP+780 ] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+788 ] 0x235F5430000      (void*)
+	[RSP+790 ] 0x1                (size_t) [1]
+	[RSP+798 ] 0x7FF957147776     (void* -> ntdll.dll+0027776	mov r14, rax)
+	[RSP+7A0 ] 0x2                (size_t) [2]
+	[RSP+7A8 ] 0x0                (size_t) [0]
+	[RSP+7B0 ] 0x0                (size_t) [0]
+	[RSP+7B8 ] 0x0                (size_t) [0]
+	[RSP+7C0 ] 0x0                (size_t) [0]
+	[RSP+7C8 ] 0x0                (size_t) [0]
+	[RSP+7D0 ] 0x0                (size_t) [0]
+	[RSP+7D8 ] 0x0                (size_t) [0]
+	[RSP+7E0 ] 0x0                (size_t) [0]
+	[RSP+7E8 ] 0x0                (size_t) [0]
+	[RSP+7F0 ] 0x0                (size_t) [0]
+	[RSP+7F8 ] 0x0                (size_t) [0]
+	[RSP+800 ] 0xF                (size_t) [15]
+	[RSP+808 ] 0x3B5C9FE820       (void*)
+	[RSP+810 ] 0x3B5C9FE830       (std::basic_filebuf<char,std::char_traits<char> >*)
+	[RSP+818 ] 0x0                (size_t) [0]
+	[RSP+820 ] 0x0                (size_t) [0]
+	[RSP+828 ] 0x1                (size_t) [1]
+	[RSP+830 ] 0x1                (size_t) [1]
+	[RSP+838 ] 0x0                (size_t) [0]
+	[RSP+840 ] 0x235F1708D60      (void*)
+	[RSP+848 ] 0x235F1708D61      (char*) "96E71"
+	[RSP+850 ] 0x235F1708D61      (char*) "96E71"
+	[RSP+858 ] 0x0                (size_t) [0]
+	[RSP+860 ] 0x0                (size_t) [0]
+	[RSP+868 ] 0x0                (size_t) [0]
+	[RSP+870 ] 0xF                (size_t) [15]
+	[RSP+878 ] 0x7FF8A261B050     (void* -> AchievementInjector.dll+01EB050	add [rax], al |  ??_C@_00CNPNBAHC@@_1EB050)
+	[RSP+880 ] 0x0                (size_t) [0]
+	[RSP+888 ] 0x0                (size_t) [0]
+	[RSP+890 ] 0x0                (size_t) [0]
+	[RSP+898 ] 0x2E               (size_t) [46]
+	[RSP+8A0 ] 0x3B5C9FEC01       (void*)
+	[RSP+8A8 ] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+8B0 ] 0xB2EDB2587F43     (size_t) [196733969137475]
+	[RSP+8B8 ] 0x0                (size_t) [0]
+	[RSP+8C0 ] 0x1F               (size_t) [31]
+	[RSP+8C8 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+8D0 ] 0x3B5C9FF050       (char*) " "
+	[RSP+8D8 ] 0x3B5C9FF600       (void*)
+	[RSP+8E0 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+8E8 ] 0x0                (size_t) [0]
+	[RSP+8F0 ] 0x3B5C9FEF90       (char*) "Unbound"
+	[RSP+8F8 ] 0x7FF8A24DCC8F     (void* -> AchievementInjector.dll+00ACC8F	mov rcx, [rsp+0x2B0] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Serializer.cpp:123 ?DeserializeAchievementData@Serializer@@QEAA?AUSerializedAchievement@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+	[RSP+900 ] 0x3B5C9FEF90       (char*) "Unbound"
+	[RSP+908 ] 0x0                (size_t) [0]
+	[RSP+910 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+918 ] 0x0                (size_t) [0]
+	[RSP+920 ] 0x3B5C9FEC10       (void*)
+	[RSP+928 ] 0x3B5C9FEC60       (char*) "$"
+	[RSP+930 ] 0x54BF0240         (size_t) [1421804096]
+	[RSP+938 ] 0x7FF954C27440     (char*) "C"
+	[RSP+940 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+948 ] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+950 ] 0x0                (size_t) [0]
+	[RSP+958 ] 0x2371EBB4528      (void*)
+	[RSP+960 ] 0x0                (size_t) [0]
+	[RSP+968 ] 0x3B5C9FF050       (char*) " "
+	[RSP+970 ] 0x0                (size_t) [0]
+	[RSP+978 ] 0x40               (size_t) [64]
+	[RSP+980 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+988 ] 0x3B5C9FEF90       (char*) "Unbound"
+	[RSP+990 ] 0x7FF8A2684870     (void* -> AchievementInjector.dll+0254870	or [rbp+0x68], cl |  ?singleton@?1??GetSingleton@?$ISingleton@VSerializer@@@@SAPEAVSerializer@@XZ@4V3@A_254870)
+	[RSP+998 ] 0x7FF954B16BD9     (void* -> ucrtbase.dll+0026BD9	add rsp, 0x530)
+	[RSP+9A0 ] 0x3B5C9FF050       (char*) " "
+	[RSP+9A8 ] 0x3B5C9FECC0       (char*) " "
+	[RSP+9B0 ] 0x3B5C9FF1E0       (void*)
+	[RSP+9B8 ] 0x1                (size_t) [1]
+	[RSP+9C0 ] 0x3B5C9FF050       (char*) " "
+	[RSP+9C8 ] 0x235F5530CC0      (void*)
+	[RSP+9D0 ] 0x3B5C9FF1E1       (void*)
+	[RSP+9D8 ] 0x40               (size_t) [64]
+	[RSP+9E0 ] 0x1                (size_t) [1]
+	[RSP+9E8 ] 0x0                (size_t) [0]
+	[RSP+9F0 ] 0x0                (size_t) [0]
+	[RSP+9F8 ] 0x235F5430000      (void*)
+	[RSP+A00 ] 0x0                (size_t) [0]
+	[RSP+A08 ] 0x7FF954C270B0     (void* -> ucrtbase.dll+01370B0	rol byte ptr [rbx-0x41], 0x01)
+	[RSP+A10 ] 0x235F5454440      (void*)
+	[RSP+A18 ] 0x7FF900000000     (size_t) [140707423584256]
+	[RSP+A20 ] 0x235F5536840      (void*)
+	[RSP+A28 ] 0x7FF900000000     (size_t) [140707423584256]
+	[RSP+A30 ] 0x235F55302AC      (void*)
+	[RSP+A38 ] 0x8                (size_t) [8]
+	[RSP+A40 ] 0x24               (size_t) [36]
+	[RSP+A48 ] 0x30               (size_t) [48]
+	[RSP+A50 ] 0x3B5C9FF1D4       (void*)
+	[RSP+A58 ] 0x235F5530CF0      (void*)
+	[RSP+A60 ] 0x700000001        (size_t) [30064771073]
+	[RSP+A68 ] 0x0                (size_t) [0]
+	[RSP+A70 ] 0x0                (size_t) [0]
+	[RSP+A78 ] 0x0                (size_t) [0]
+	[RSP+A80 ] 0x30               (size_t) [48]
+	[RSP+A88 ] 0x235F5430000      (void*)
+	[RSP+A90 ] 0x3                (size_t) [3]
+	[RSP+A98 ] 0x8                (size_t) [8]
+	[RSP+AA0 ] 0x20               (size_t) [32]
+	[RSP+AA8 ] 0x7FF9571478B4     (void* -> ntdll.dll+00278B4	mov rbp, rax)
+	[RSP+AB0 ] 0x235F5530000      (void*)
+	[RSP+AB8 ] 0x1                (size_t) [1]
+	[RSP+AC0 ] 0x20               (size_t) [32]
+	[RSP+AC8 ] 0x0                (size_t) [0]
+	[RSP+AD0 ] 0x0                (size_t) [0]
+	[RSP+AD8 ] 0x0                (size_t) [0]
+	[RSP+AE0 ] 0x235F55318C0      (void*)
+	[RSP+AE8 ] 0x0                (size_t) [0]
+	[RSP+AF0 ] 0x235F55302A4      (void*)
+	[RSP+AF8 ] 0x0                (size_t) [0]
+	[RSP+B00 ] 0x3B5C9FF600       (void*)
+	[RSP+B08 ] 0x20               (size_t) [32]
+	[RSP+B10 ] 0x0                (size_t) [0]
+	[RSP+B18 ] 0x3B5C9FEF90       (char*) "Unbound"
+	[RSP+B20 ] 0x3B5C9FF430       (void*)
+	[RSP+B28 ] 0x235F5430000      (void*)
+	[RSP+B30 ] 0x3B5C9FF030       (void*)
+	[RSP+B38 ] 0x7FF957147776     (void* -> ntdll.dll+0027776	mov r14, rax)
+	[RSP+B40 ] 0x646E756F626E55   (size_t) [28268948330016341]
+	[RSP+B48 ] 0x0                (size_t) [0]
+	[RSP+B50 ] 0x7                (size_t) [7]
+	[RSP+B58 ] 0xF                (size_t) [15]
+	[RSP+B60 ] 0x6                (size_t) [6]
+	[RSP+B68 ] 0x30               (size_t) [48]
+	[RSP+B70 ] 0x235F5530000      (void*)
+	[RSP+B78 ] 0x235F5530CF0      (void*)
+	[RSP+B80 ] 0x6                (size_t) [6]
+	[RSP+B88 ] 0x0                (size_t) [0]
+	[RSP+B90 ] 0x0                (size_t) [0]
+	[RSP+B98 ] 0x0                (size_t) [0]
+	[RSP+BA0 ] 0x30               (size_t) [48]
+	[RSP+BA8 ] 0x235F5430000      (void*)
+	[RSP+BB0 ] 0x3                (size_t) [3]
+	[RSP+BB8 ] 0x8                (size_t) [8]
+	[RSP+BC0 ] 0x20               (size_t) [32]
+	[RSP+BC8 ] 0x7FF9571478B4     (void* -> ntdll.dll+00278B4	mov rbp, rax)
+	[RSP+BD0 ] 0x235F5530000      (void*)
+	[RSP+BD8 ] 0x23700000001      (void*)
+	[RSP+BE0 ] 0x20               (size_t) [32]
+	[RSP+BE8 ] 0x23500000000      (size_t) [2426656522240]
+	[RSP+BF0 ] 0x3B5C9FF029       (void*)
+	[RSP+BF8 ] 0x7FF957147776     (void* -> ntdll.dll+0027776	mov r14, rax)
+	[RSP+C00 ] 0x2                (size_t) [2]
+	[RSP+C08 ] 0x0                (size_t) [0]
+	[RSP+C10 ] 0x2371EBB4440      (void*)
+	[RSP+C18 ] 0x0                (size_t) [0]
+	[RSP+C20 ] 0x34               (size_t) [52]
+	[RSP+C28 ] 0x20               (size_t) [32]
+	[RSP+C30 ] 0x0                (size_t) [0]
+	[RSP+C38 ] 0x3B5C9FF390       (void*)
+	[RSP+C40 ] 0x3B5C9FF3F8       (void*)
+	[RSP+C48 ] 0x235F5430000      (void*)
+	[RSP+C50 ] 0x235F0D32170      (void*)
+	[RSP+C58 ] 0x2371EE6EA90      (char*) "Complete "Unbound""
+	[RSP+C60 ] 0x3B5C9FF430       (void*)
+	[RSP+C68 ] 0x3B5C9FF600       (void*)
+	[RSP+C70 ] 0x7FF954C288B0     (void* -> ucrtbase.dll+01388B0	add [rax], al)
+	[RSP+C78 ] 0x7FF954B17F19     (void* -> ucrtbase.dll+0027F19	test rax, rax)
+	[RSP+C80 ] 0x235F5430000      (void*)
+	[RSP+C88 ] 0x20               (size_t) [32]
+	[RSP+C90 ] 0x12               (size_t) [18]
+	[RSP+C98 ] 0x2371EB64000      (void*)
+	[RSP+CA0 ] 0x1F               (size_t) [31]
+	[RSP+CA8 ] 0x7FF8A25D6E97     (void* -> AchievementInjector.dll+01A6E97	test rax, rax |  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp:36 ??2@YAPEAX_K@Z)
+	[RSP+CB0 ] 0x20               (size_t) [32]
+	[RSP+CB8 ] 0x7FF954B37E68     (void* -> ucrtbase.dll+0047E68	add rsp, 0x80)
+	[RSP+CC0 ] 0xB2EDB2587303     (size_t) [196733969134339]
+	[RSP+CC8 ] 0x3B5C9FEF00       (void*)
+	[RSP+CD0 ] 0x1F               (size_t) [31]
+	[RSP+CD8 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+CE0 ] 0x3B5C9FF430       (void*)
+	[RSP+CE8 ] 0x3B5C9FF600       (void*)
+	[RSP+CF0 ] 0x3B5C9FF558       (void*)
+	[RSP+CF8 ] 0x237101C2DD0      (void*)
+	[RSP+D00 ] 0x0                (size_t) [0]
+	[RSP+D08 ] 0x7FF8A243BC4B     (void* -> AchievementInjector.dll+000BC4B	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Achievement.cpp:398 ?ToString@Achievement@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+	[RSP+D10 ] 0x0                (size_t) [0]
+	[RSP+D18 ] 0x237101C2DD0      (void*)
+	[RSP+D20 ] 0x3B5C9FF558       (void*)
+	[RSP+D28 ] 0x3B5C9FF600       (void*)
+	[RSP+D30 ] 0x235F55302A8      (void*)
+	[RSP+D38 ] 0x7FF954B17F19     (void* -> ucrtbase.dll+0027F19	test rax, rax)
+	[RSP+D40 ] 0x2371EBB4440      (void*)
+	[RSP+D48 ] 0x20               (size_t) [32]
+	[RSP+D50 ] 0x1FFFFFFFE        (size_t) [8589934590]
+	[RSP+D58 ] 0x235F5530CF0      (void*)
+	[RSP+D60 ] 0x2371EBB4440      (void*)
+	[RSP+D68 ] 0x3B5C9FF430       (void*)
+	[RSP+D70 ] 0x646E756F626E55   (size_t) [28268948330016341]
+	[RSP+D78 ] 0x0                (size_t) [0]
+	[RSP+D80 ] 0x7                (size_t) [7]
+	[RSP+D88 ] 0xF                (size_t) [15]
+	[RSP+D90 ] 0x7FF954C288B0     (void* -> ucrtbase.dll+01388B0	add [rax], al)
+	[RSP+D98 ] 0x7FF954B17F19     (void* -> ucrtbase.dll+0027F19	test rax, rax)
+	[RSP+DA0 ] 0x10               (size_t) [16]
+	[RSP+DA8 ] 0x20               (size_t) [32]
+	[RSP+DB0 ] 0x0                (size_t) [0]
+	[RSP+DB8 ] 0x1                (size_t) [1]
+	[RSP+DC0 ] 0x0                (size_t) [0]
+	[RSP+DC8 ] 0x7FF8A25D6E97     (void* -> AchievementInjector.dll+01A6E97	test rax, rax |  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\heap\new_scalar.cpp:36 ??2@YAPEAX_K@Z)
+	[RSP+DD0 ] 0x20               (size_t) [32]
+	[RSP+DD8 ] 0x235F5430001      (void*)
+	[RSP+DE0 ] 0x0                (size_t) [0]
+	[RSP+DE8 ] 0x0                (size_t) [0]
+	[RSP+DF0 ] 0x3B5C9FF378       (void*)
+	[RSP+DF8 ] 0x7FF8A24ABF1B     (void* -> AchievementInjector.dll+007BF1B	lea rdx, [r15+rdi*1] |  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream:332 ?overflow@?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@MEAAHH@Z)
+	[RSP+E00 ] 0x3B5C9FF1C0       (void*)
+	[RSP+E08 ] 0x7FF944EC3558     (void* -> MSVCP140.dll+0003558	mov byte ptr [rbx+rsi*1], 0x00)
+	[RSP+E10 ] 0x6                (size_t) [6]
+	[RSP+E18 ] 0x235F72249D0      (std::numpunct<char>*)
+	[RSP+E20 ] 0x3B5C9FF1C0       (void*)
+	[RSP+E28 ] 0x3B5C9FF0F8       (void*)
+	[RSP+E30 ] 0x20               (size_t) [32]
+	[RSP+E38 ] 0x0                (size_t) [0]
+	[RSP+E40 ] 0x1                (size_t) [1]
+	[RSP+E48 ] 0x7FF944ECE58E     (void* -> MSVCP140.dll+000E58E	mov r8d, eax)
+	[RSP+E50 ] 0x1                (size_t) [1]
+	[RSP+E58 ] 0x3B5C9FF0E0       (void*)
+	[RSP+E60 ] 0x3B5C9FF131       (void*)
+	[RSP+E68 ] 0x3B5C9FF131       (void*)
+	[RSP+E70 ] 0x0                (size_t) [0]
+	[RSP+E78 ] 0x7FF944ECEEDF     (void* -> MSVCP140.dll+000EEDF	mov rbx, [rsp+0xE0])
+	[RSP+E80 ] 0x235F5438290      (std::locale::_Locimp*)
+	[RSP+E88 ] 0x3B00000000       (size_t) [253403070464]
+	[RSP+E90 ] 0x235F72249D0      (std::numpunct<char>*)
+	[RSP+E98 ] 0x0                (size_t) [0]
+	[RSP+EA0 ] 0x3B5C9FEBF0       (void*)
+	[RSP+EA8 ] 0x2                (size_t) [2]
+	[RSP+EB0 ] 0x23E70F8AEE20     (size_t) [39475305180704]
+	[RSP+EB8 ] 0x3B5C9FF600       (void*)
+	[RSP+EC0 ] 0x2371EE46C90      (char*) "Complete "Unbound""
+	[RSP+EC8 ] 0x0                (size_t) [0]
+	[RSP+ED0 ] 0x12               (size_t) [18]
+	[RSP+ED8 ] 0x1F               (size_t) [31]
+	[RSP+EE0 ] 0x0                (size_t) [0]
+	[RSP+EE8 ] 0x1                (size_t) [1]
+	[RSP+EF0 ] 0xF                (size_t) [15]
+	[RSP+EF8 ] 0x0                (size_t) [0]
+	[RSP+F00 ] 0x0                (size_t) [0]
+	[RSP+F08 ] 0x0                (size_t) [0]
+	[RSP+F10 ] 0x235F5531980      (void*)
+	[RSP+F18 ] 0x8161F18025B3     (size_t) [142257663518131]
+	[RSP+F20 ] 0x235F55302FC      (void*)
+	[RSP+F28 ] 0x4                (size_t) [4]
+	[RSP+F30 ] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+F38 ] 0x170              (size_t) [368]
+	[RSP+F40 ] 0x3B5C9FF2B0       (void*)
+	[RSP+F48 ] 0x235F5530CC0      (void*)
+	[RSP+F50 ] 0x3B5C9FF2A0       (void*)
+	[RSP+F58 ] 0x0                (size_t) [0]
+	[RSP+F60 ] 0x0                (size_t) [0]
+	[RSP+F68 ] 0x0                (size_t) [0]
+	[RSP+F70 ] 0x170              (size_t) [368]
+	[RSP+F78 ] 0x235F5430000      (void*)
+	[RSP+F80 ] 0x17               (size_t) [23]
+	[RSP+F88 ] 0x80               (size_t) [128]
+	[RSP+F90 ] 0x167              (size_t) [359]
+	[RSP+F98 ] 0x7FF9571478B4     (void* -> ntdll.dll+00278B4	mov rbp, rax)
+	[RSP+FA0 ] 0x235F5530000      (void*)
+	[RSP+FA8 ] 0x3B00000000       (size_t) [253403070464]
+	[RSP+FB0 ] 0x167              (size_t) [359]
+	[RSP+FB8 ] 0x0                (size_t) [0]
+	[RSP+FC0 ] 0x3B5C9FF370       (void*)
+	[RSP+FC8 ] 0x7FF944F5561D     (void* -> VCRUNTIME140.dll+000561D	xor eax, eax)
+	[RSP+FD0 ] 0x7E               (size_t) [126]
+	[RSP+FD8 ] 0x2370698E140      (void*)
+	[RSP+FE0 ] 0x237116FB610      (std::num_put<char,std::ostreambuf_iterator<char,std::char_traits<char> > >*)
+	[RSP+FE8 ] 0x0                (size_t) [0]
+	[RSP+FF0 ] 0x4E               (size_t) [78]
+	[RSP+FF8 ] 0x167              (size_t) [359]
+	[RSP+1000] 0x0                (size_t) [0]
+	[RSP+1008] 0xE1               (size_t) [225]
+	[RSP+1010] 0x2371EE68440      (void*)
+	[RSP+1018] 0x235F5430000      (void*)
+	[RSP+1020] 0xEF               (size_t) [239]
+	[RSP+1028] 0x7FF957147776     (void* -> ntdll.dll+0027776	mov r14, rax)
+	[RSP+1030] 0x23500000002      (size_t) [2426656522242]
+	[RSP+1038] 0x0                (size_t) [0]
+	[RSP+1040] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+1048] 0x3B5C9FF600       (void*)
+	[RSP+1050] 0x3B5C9FF558       (void*)
+	[RSP+1058] 0x0                (size_t) [0]
+	[RSP+1060] 0x237116FB890      (void*)
+	[RSP+1068] 0x7FF954AFDDAB     (void* -> ucrtbase.dll+000DDAB	test eax, eax)
+	[RSP+1070] 0x235F5430000      (void*)
+	[RSP+1078] 0x3B00000000       (size_t) [253403070464]
+	[RSP+1080] 0x237116FB890      (void*)
+	[RSP+1088] 0x0                (size_t) [0]
+	[RSP+1090] 0x3B5C9FF558       (void*)
+	[RSP+1098] 0x7FF944ECB0BF     (void* -> MSVCP140.dll+000B0BF	add rsp, 0x20)
+	[RSP+10A0] 0x3B5C9FF3F8       (void*)
+	[RSP+10A8] 0x7FF8A2482D16     (void* -> AchievementInjector.dll+0052D16	movzx ecx, byte ptr [rax] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:84 ?get@Module@REL@@SAAEAV12@XZ C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:207 ?get@Module@REL@@SAAEAV12@XZ)
+	[RSP+10B0] 0x237116FB9B0      (void*)
+	[RSP+10B8] 0x7FF8A24AC581     (void* -> AchievementInjector.dll+007C581	mov rax, [rbx+0x18] |  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream:173 ??1?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UEAA@XZ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream:797 ??1?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UEAA@XZ)
+	[RSP+10C0] 0x4                (size_t) [4]
+	[RSP+10C8] 0x7FF8A2482D16     (void* -> AchievementInjector.dll+0052D16	movzx ecx, byte ptr [rax] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:84 ?get@Module@REL@@SAAEAV12@XZ C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:207 ?get@Module@REL@@SAAEAV12@XZ)
+	[RSP+10D0] 0x235F0D32170      (void*)
+	[RSP+10D8] 0x7FF800000000     (size_t) [140703128616960]
+	[RSP+10E0] 0x61B8D            (size_t) [400269]
+	[RSP+10E8] 0x7FF8A24592AE     (void* -> AchievementInjector.dll+00292AE	mov rbx, [rsp+0xB0] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\ID.h:201 ?id2offset@IDDatabase@REL@@QEBA_K_K@Z)
+	[RSP+10F0] 0x4                (size_t) [4]
+	[RSP+10F8] 0x2367A629DE0      (void*)
+	[RSP+1100] 0x10E48            (size_t) [69192]
+	[RSP+1108] 0x7FF8A24592AE     (void* -> AchievementInjector.dll+00292AE	mov rbx, [rsp+0xB0] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\ID.h:201 ?id2offset@IDDatabase@REL@@QEBA_K_K@Z)
+	[RSP+1110] 0x0                (size_t) [0]
+	[RSP+1118] 0x2367A1E4630      (void*)
+	[RSP+1120] 0x61B8D            (size_t) [400269]
+	[RSP+1128] 0x7FF8A2459DC6     (void* -> AchievementInjector.dll+0029DC6	movzx ecx, byte ptr [rax] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\ID.h:132 ?get@IDDatabase@REL@@SAAEAV12@XZ)
+	[RSP+1130] 0x0                (size_t) [0]
+	[RSP+1138] 0x0                (size_t) [0]
+	[RSP+1140] 0x10E48            (size_t) [69192]
+	[RSP+1148] 0xE1               (size_t) [225]
+	[RSP+1150] 0x3B5C9FF4C8       (void*)
+	[RSP+1158] 0x7FF8A2482D16     (void* -> AchievementInjector.dll+0052D16	movzx ecx, byte ptr [rax] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:84 ?get@Module@REL@@SAAEAV12@XZ C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\Module.h:207 ?get@Module@REL@@SAAEAV12@XZ)
+	[RSP+1160] 0xB2EDB2587713     (size_t) [196733969135379]
+	[RSP+1168] 0x7FF8A2459EAE     (void* -> AchievementInjector.dll+0029EAE	mov rdx, rbx |  C:\Users\Simone\Documents\GitHub\Achievement Injector\build\vcpkg_installed\x64-windows-static-md\include\REL\ID.h:501 ?offset@RelocationID@REL@@QEBA_KXZ)
+	[RSP+1170] 0x7FF8A2621FB8     (char*) "Achievement group {} has {} achievements"
+	[RSP+1178] 0x28               (size_t) [40]
+	[RSP+1180] 0x235F0D32170      (void*)
+	[RSP+1188] 0x0                (size_t) [0]
+	[RSP+1190] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+1198] 0x3B5C9FF600       (void*)
+	[RSP+11A0] 0x3B5C9FF558       (void*)
+	[RSP+11A8] 0x236B14C8440      (void*)
+	[RSP+11B0] 0x1                (size_t) [1]
+	[RSP+11B8] 0x7FF8A2484DD0     (void* -> AchievementInjector.dll+0054DD0	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:55 ?ToString@AchievementGroup@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+	[RSP+11C0] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+11C8] 0x3B5C9FF600       (void*)
+	[RSP+11D0] 0x236B14C82B0      (void*)
+	[RSP+11D8] 0x235F0D32170      (void*)
+	[RSP+11E0] 0x3B00000001       (size_t) [253403070465]
+	[RSP+11E8] 0x3B5C9FF558       (void*)
+	[RSP+11F0] 0x3B5C9FF4C8       (void*)
+	[RSP+11F8] 0x3B5C9FF4C8       (void*)
+	[RSP+1200] 0x3B5C9FF4C8       (void*)
+	[RSP+1208] 0x3B5C9FF600       (void*)
+	[RSP+1210] 0x0                (size_t) [0]
+	[RSP+1218] 0x0                (size_t) [0]
+	[RSP+1220] 0x0                (size_t) [0]
+	[RSP+1228] 0xF                (size_t) [15]
+	[RSP+1230] 0xB2EDB2586BC3     (size_t) [196733969132483]
+	[RSP+1238] 0x10E48            (size_t) [69192]
+	[RSP+1240] 0x7F               (size_t) [127]
+	[RSP+1248] 0x235F0D31EF0      (char*) "Skyrim"
+	[RSP+1250] 0x235F0D32170      (void*)
+	[RSP+1258] 0x7FF8A24857EB     (void* -> AchievementInjector.dll+00557EB	nop |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:103 ?ToString@AchievementManager@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+	[RSP+1260] 0x7FF64827D9A0     (void* -> SkyrimSE.exe+0CED9A0	mov [rsp+0x08], rcx)
+	[RSP+1268] 0x3B5C9FF4C8       (void*)
+	[RSP+1270] 0x235F0D31F20      (char*) "
+"
+	[RSP+1278] 0x3B5C9FF580       (char*) "re||"
+	[RSP+1280] 0xA                (size_t) [10]
+	[RSP+1288] 0x7FF8A26156D0     (char*) "||"
+	[RSP+1290] 0x2                (size_t) [2]
+	[RSP+1298] 0x3B5C9FF5D0       (void*)
+	[RSP+12A0] 0x7F00000000       (size_t) [545460846592]
+	[RSP+12A8] 0x0                (size_t) [0]
+	[RSP+12B0] 0x3B5C9FF600       (void*)
+	[RSP+12B8] 0x2371EE68400      (char*) "N"
+	[RSP+12C0] 0x7C7C6572         (size_t) [2088527218]
+	[RSP+12C8] 0x0                (size_t) [0]
+	[RSP+12D0] 0xF                (size_t) [15]
+	[RSP+12D8] 0x2371EE68400      (char*) "N"
+	[RSP+12E0] 0x7C7C6572         (size_t) [2088527218]
+	[RSP+12E8] 0x0                (size_t) [0]
+	[RSP+12F0] 0xF                (size_t) [15]
+	[RSP+12F8] 0x2371EE46C00      (char*) "C:/WINDOWS/SYSTEM32/MSASN1.dll"
+	[RSP+1300] 0x7C7C6572         (size_t) [2088527218]
+	[RSP+1308] 0x0                (size_t) [0]
+	[RSP+1310] 0xF                (size_t) [15]
+	[RSP+1318] 0x2371EE68440      (void*)
+	[RSP+1320] 0x7C7C6572         (size_t) [2088527218]
+	[RSP+1328] 0x4E               (size_t) [78]
+	[RSP+1330] 0x4F               (size_t) [79]
+	[RSP+1338] 0x0                (size_t) [0]
+	[RSP+1340] 0x0                (size_t) [0]
+	[RSP+1348] 0x0                (size_t) [0]
+	[RSP+1350] 0xF                (size_t) [15]
+	[RSP+1358] 0x2371EE46C00      (char*) "C:/WINDOWS/SYSTEM32/MSASN1.dll"
+	[RSP+1360] 0x7C7C6572         (size_t) [2088527218]
+	[RSP+1368] 0x0                (size_t) [0]
+	[RSP+1370] 0xF                (size_t) [15]
+	[RSP+1378] 0xB2EDB2586CA3     (size_t) [196733969132707]
+	[RSP+1380] 0x34               (size_t) [52]
+	[RSP+1388] 0x11               (size_t) [17]
+	[RSP+1390] 0x235F3D30D40      (void*)
+	[RSP+1398] 0x0                (size_t) [0]
+	[RSP+13A0] 0x34               (size_t) [52]
+	[RSP+13A8] 0x235F0D32170      (void*)
+	[RSP+13B0] 0x3B5C9FF740       (void*)
+	[RSP+13B8] 0x7FF8A24858FA     (void* -> AchievementInjector.dll+00558FA	lea rcx, [rbx+0x50] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\AchievementManager.cpp:109 ?UpdateCache@AchievementManager@@QEAAXXZ)
+	[RSP+13C0] 0x48               (size_t) [72]
+	[RSP+13C8] 0x4F               (size_t) [79]
+	[RSP+13D0] 0x7FF8A26848A0     (void* -> AchievementInjector.dll+02548A0	loopne 0x00007FF8A26848AC |  ?singleton@?1??GetSingleton@?$ISingleton@VAchievementManager@@@@SAPEAVAchievementManager@@XZ@4V3@A_2548A0)
+	[RSP+13D8] 0x0                (size_t) [0]
+	[RSP+13E0] 0x235F1737480      (char*) "4
+SkyrimSE||Skyrim||..\SKSE\Plugins\AchievementsData\Icons\SkyrimSE.dds
+Dawnguard||Dawnguard||..\SKSE\Plugins\AchievementsData\Icons\Dawnguard.dds
+Dragonborn||Dragonborn||..\SKSE\Plugins\AchievementsData\Icons\Dragonborn.dds
+Hearthfire||Hearthfire||..\SKSE\Plugins\AchievementsData\Icons\Hearthfire.dds
+"
+	[RSP+13E8] 0x0                (size_t) [0]
+	[RSP+13F0] 0x12F              (size_t) [303]
+	[RSP+13F8] 0x166              (size_t) [358]
+	[RSP+1400] 0xB2EDB2586DC3     (size_t) [196733969132995]
+	[RSP+1408] 0x11               (size_t) [17]
+	[RSP+1410] 0x235F1737BC0      (void*)
+	[RSP+1418] 0x7FF8A24D27C7     (void* -> AchievementInjector.dll+00A27C7	mov eax, [rbx+rdi*1] |  C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Plugin.cpp:146 ?MessageHandler@@YAXPEAUMessage@MessagingInterface@SKSE@@@Z)
+	[RSP+1420] 0x235F1737BC0      (void*)
+	[RSP+1428] 0x235F1737BC0      (void*)
+	[RSP+1430] 0x235F0D32170      (void*)
+	[RSP+1438] 0x235F0D31EF0      (char*) "Skyrim"
+	[RSP+1440] 0x235F0D320D0      (char*) "Hearthfire"
+	[RSP+1448] 0x3B5C9FF6B0       (char*) "2"
+	[RSP+1450] 0x7FF8A2621FB8     (char*) "Achievement group {} has {} achievements"
+	[RSP+1458] 0x28               (size_t) [40]
+	[RSP+1460] 0x7FF8A2621BF0     (char*) "C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Plugin.cpp"
+	[RSP+1468] 0x89               (size_t) [137]
+	[RSP+1470] 0x7FF8A2621F70     (char*) "void __cdecl MessageHandler(struct SKSE::MessagingInterface::Message *)"
+	[RSP+1478] 0x8000000000000000 (size_t) [uint: 9223372036854775808 int: -9223372036854775808]
+	[RSP+1480] 0x3B5C9FF6C8       (void*)
+	[RSP+1488] 0x235F3D30D40      (void*)
+	[RSP+1490] 0x32               (size_t) [50]
+	[RSP+1498] 0x23710885E40      (void*)
+	[RSP+14A0] 0x23710885E40      (void*)
+	[RSP+14A8] 0x45536D6972796B00 (size_t) [4995456711343565568]
+	[RSP+14B0] 0x0                (size_t) [0]
+	[RSP+14B8] 0x0                (size_t) [0]
+	[RSP+14C0] 0xF                (size_t) [15]
+	[RSP+14C8] 0x7FF8B4CCD84D     (void* -> skse64_1_6_1170.dll+009D84D	mov rbp, [rsp+0x48])
+	[RSP+14D0] 0x1B               (size_t) [27]
+	[RSP+14D8] 0x3B5C9FF868       (void*)
+	[RSP+14E0] 0x23712505800      (void*)
+	[RSP+14E8] 0x0                (size_t) [0]
+	[RSP+14F0] 0x0                (size_t) [0]
+	[RSP+14F8] 0xF                (size_t) [15]
+	[RSP+1500] 0x652E6D6972796B00 (size_t) [7290885146418965248]
+	[RSP+1508] 0x6D73             (size_t) [28019]
+	[RSP+1510] 0x0                (size_t) [0]
+	[RSP+1518] 0xF                (size_t) [15]
+	[RSP+1520] 0x6D6972796B00     (size_t) [120299659553536]
+	[RSP+1528] 0x0                (size_t) [0]
+	[RSP+1530] 0x0                (size_t) [0]
+	[RSP+1538] 0xF                (size_t) [15]
+	[RSP+1540] 0x7FF8A2621BF0     (char*) "C:\Users\Simone\Documents\GitHub\Achievement Injector\src\Plugin.cpp"
+	[RSP+1548] 0x89               (size_t) [137]
+	[RSP+1550] 0x7FF8A2621F70     (char*) "void __cdecl MessageHandler(struct SKSE::MessagingInterface::Message *)"
+	[RSP+1558] 0x8000000000000000 (size_t) [uint: 9223372036854775808 int: -9223372036854775808]
+	[RSP+1560] 0x652E6D6972796B00 (size_t) [7290885146418965248]
+	[RSP+1568] 0x6D73             (size_t) [28019]
+	[RSP+1570] 0x0                (size_t) [0]
+	[RSP+1578] 0xF                (size_t) [15]
+	[RSP+1580] 0x0                (size_t) [0]
+	[RSP+1588] 0x3B5C9FF8D8       (void*)
+	[RSP+1590] 0x7FF8B4D0D5F0     (char*) "sending message type %u to plugin %u"
+	[RSP+1598] 0x7FF8B4CCD357     (void* -> skse64_1_6_1170.dll+009D357	mov eax, edi)
+	[RSP+15A0] 0x3B5C9FF840       (void*)
+	[RSP+15A8] 0x3B5C9FF848       (void*)
+	[RSP+15B0] 0x3B5C9FF8D8       (void*)
+	[RSP+15B8] 0x3B5C9FF840       (void*)
+	[RSP+15C0] 0x6D6972796B00     (size_t) [120299659553536]
+	[RSP+15C8] 0x0                (size_t) [0]
+	[RSP+15D0] 0x0                (size_t) [0]
+	[RSP+15D8] 0xF                (size_t) [15]
+	[RSP+15E0] 0x652E6D6972796B00 (size_t) [7290885146418965248]
+	[RSP+15E8] 0x6D73             (size_t) [28019]
+	[RSP+15F0] 0x0                (size_t) [0]
+	[RSP+15F8] 0xF                (size_t) [15]
+	[RSP+1600] 0x45536D6972796B00 (size_t) [4995456711343565568]
+	[RSP+1608] 0x0                (size_t) [0]
+	[RSP+1610] 0x0                (size_t) [0]
+	[RSP+1618] 0xF                (size_t) [15]
+	[RSP+1620] 0x0                (size_t) [0]
+	[RSP+1628] 0x0                (size_t) [0]
+	[RSP+1630] 0x0                (size_t) [0]
+	[RSP+1638] 0x23712505800      (void*)
+	[RSP+1640] 0x0                (size_t) [0]
+	[RSP+1648] 0x0                (size_t) [0]
+	[RSP+1650] 0xF                (size_t) [15]
+	[RSP+1658] 0x10000            (size_t) [65536]
+	[RSP+1660] 0xB2EDB2586E63     (size_t) [196733969133155]
+	[RSP+1668] 0x3B5C9FF8D8       (void*)
+	[RSP+1670] 0x0                (size_t) [0]
+	[RSP+1678] 0x0                (size_t) [0]
+	[RSP+1680] 0x0                (size_t) [0]
+	[RSP+1688] 0x7FF8B4D06D48     (char*) "SKSE"
+	[RSP+1690] 0x0                (size_t) [0]
+	[RSP+1698] 0x0                (size_t) [0]
+	[RSP+16A0] 0x0                (size_t) [0]
+	[RSP+16A8] 0x7FF8B4CB2BF2     (void* -> skse64_1_6_1170.dll+0082BF2	mov r11, [0x00007FF8B4D44D10])
+	[RSP+16B0] 0x235F720EF50      (void*)
+	[RSP+16B8] 0x8                (size_t) [8]
+	[RSP+16C0] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+16C8] 0x3B5C9FF200       (void*)
+	[RSP+16D0] 0x7FF8B4D06D48     (char*) "SKSE"
+	[RSP+16D8] 0x8                (size_t) [8]
+	[RSP+16E0] 0x0                (size_t) [0]
+	[RSP+16E8] 0x7FF647BDAC23     (void* -> SkyrimSE.exe+064AC23	ucomiss xmm0, xmm6)
+	[RSP+16F0] 0x235A0C05E01      (void*)
+	[RSP+16F8] 0x0                (size_t) [0]
+	[RSP+1700] 0x0                (size_t) [0]
+	[RSP+1708] 0x7FF648DC0288     (char*) "Controller disconnected."
+	[RSP+1710] 0x2369FBB4460      (void*)
+	[RSP+1718] 0x7FF8B4C3A6B8     (void* -> skse64_1_6_1170.dll+000A6B8	mov eax, ebx)
+	[RSP+1720] 0x0                (size_t) [0]
+	[RSP+1728] 0x768              (size_t) [1896]
+	[RSP+1730] 0x0                (size_t) [0]
+	[RSP+1738] 0x2369FBB4BC8      (void*)
+	[RSP+1740] 0x0                (size_t) [0]
+	[RSP+1748] 0x0                (size_t) [0]
+	[RSP+1750] 0x2                (size_t) [2]
+	[RSP+1758] 0x7FF647BD2FCC     (void* -> SkyrimSE.exe+0642FCC	cmp dword ptr [0x00007FF64AB811D0], 0x02)
+	[RSP+1760] 0x2                (size_t) [2]
+	[RSP+1768] 0x2                (size_t) [2]
+	[RSP+1770] 0x0                (size_t) [0]
+	[RSP+1778] 0x2369FBB4460      (void*)
+	[RSP+1780] 0x235FFC0A030      (Sky*)
+	[RSP+1788] 0x235A14A8F00      (LoadedAreaBound*)
+	[RSP+1790] 0x0                (size_t) [0]
+	[RSP+1798] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+17A0] 0x7FF6495A2620     (SettingT<INISettingCollection>*)
+	[RSP+17A8] 0x7FF6495A2638     (SettingT<INISettingCollection>*)
+	[RSP+17B0] 0x7FF6495A2650     (SettingT<INISettingCollection>*)
+	[RSP+17B8] 0x7FF6495A2668     (SettingT<INISettingCollection>*)
+	[RSP+17C0] 0x7FF6495A2680     (SettingT<INISettingCollection>*)
+	[RSP+17C8] 0x7FF6495A2698     (SettingT<INISettingCollection>*)
+	[RSP+17D0] 0x7FF6495A26B0     (SettingT<INISettingCollection>*)
+	[RSP+17D8] 0x7FF6495A26C8     (SettingT<INISettingCollection>*)
+	[RSP+17E0] 0x7FF6495A26E0     (SettingT<INISettingCollection>*)
+	[RSP+17E8] 0x7FF6495A26F8     (SettingT<INISettingCollection>*)
+	[RSP+17F0] 0x0                (size_t) [0]
+	[RSP+17F8] 0x0                (size_t) [0]
+	[RSP+1800] 0x0                (size_t) [0]
+	[RSP+1808] 0x0                (size_t) [0]
+	[RSP+1810] 0x0                (size_t) [0]
+	[RSP+1818] 0x7FF647BDC5BC     (void* -> SkyrimSE.exe+064C5BC	xor eax, eax)
+	[RSP+1820] 0x3B592FFB70       (InitTESThread*)
+	[RSP+1828] 0x0                (size_t) [0]
+	[RSP+1830] 0x2                (size_t) [2]
+	[RSP+1838] 0x23500000002      (size_t) [2426656522242]
+	[RSP+1840] 0x3B592FFB70       (InitTESThread*)
+	[RSP+1848] 0x7FF648260DBD     (void* -> SkyrimSE.exe+0CD0DBD	mov rcx, [0x00007FF64A75C318])
+	[RSP+1850] 0x7FF64A75C370     (void* -> SkyrimSE.exe+31CC370	add [rax], al)
+	[RSP+1858] 0x3B592FFB70       (InitTESThread*)
+	[RSP+1860] 0x0                (size_t) [0]
+	[RSP+1868] 0x0                (size_t) [0]
+	[RSP+1870] 0x3B592FFB70       (InitTESThread*)
+	[RSP+1878] 0x0                (size_t) [0]
+	[RSP+1880] 0x0                (size_t) [0]
+	[RSP+1888] 0x7FF9566FE8D7     (void* -> KERNEL32.DLL+002E8D7	mov ecx, eax)
+	[RSP+1890] 0x0                (size_t) [0]
+	[RSP+1898] 0x0                (size_t) [0]
+	[RSP+18A0] 0x0                (size_t) [0]
+	[RSP+18A8] 0x0                (size_t) [0]
+	[RSP+18B0] 0x0                (size_t) [0]
+	[RSP+18B8] 0x7FF9571FFBCC     (void* -> ntdll.dll+00DFBCC	jmp 0x00007FF9571FFBF6)
+	[RSP+18C0] 0x0                (size_t) [0]
+	[RSP+18C8] 0x0                (size_t) [0]
+	[RSP+18D0] 0x4F0FFFFFB30      (size_t) [5433133628208]
+	[RSP+18D8] 0x4D0FFFFFB30      (size_t) [5295694674736]
+	[RSP+18E0] 0x21               (size_t) [33]
+	[RSP+18E8] 0x7FF95484D2E0     (void* -> KERNELBASE.dll+011D2E0	mov [rsp+0x10], rbx)
+	[RSP+18F0] 0x3B5C9FCBF0       (void*)
+	[RSP+18F8] 0x3B5C9FCBF0       (void*)
+	[RSP+1900] 0x0                (size_t) [0]
+	[RSP+1908] 0x0                (size_t) [0]
+	[RSP+1910] 0x0                (size_t) [0]
+	[RSP+1918] 0x0                (size_t) [0]
+	[RSP+1920] 0x0                (size_t) [0]
+	[RSP+1928] 0x0                (size_t) [0]
+	[RSP+1930] 0x0                (size_t) [0]
+	[RSP+1938] 0x0                (size_t) [0]
+	[RSP+1940] 0x0                (size_t) [0]
+	[RSP+1948] 0x0                (size_t) [0]
+	[RSP+1950] 0x0                (size_t) [0]
+	[RSP+1958] 0x0                (size_t) [0]
+	[RSP+1960] 0x0                (size_t) [0]
+	[RSP+1968] 0x0                (size_t) [0]
+	[RSP+1970] 0x0                (size_t) [0]
+	[RSP+1978] 0x0                (size_t) [0]
+	[RSP+1980] 0x0                (size_t) [0]
+	[RSP+1988] 0x0                (size_t) [0]
+	[RSP+1990] 0x0                (size_t) [0]
+	[RSP+1998] 0x0                (size_t) [0]
+	[RSP+19A0] 0x0                (size_t) [0]
+	[RSP+19A8] 0x0                (size_t) [0]
+	[RSP+19B0] 0x0                (size_t) [0]
+	[RSP+19B8] 0x0                (size_t) [0]
+	[RSP+19C0] 0x0                (size_t) [0]
+	[RSP+19C8] 0x0                (size_t) [0]
+	[RSP+19D0] 0x0                (size_t) [0]
+	[RSP+19D8] 0x0                (size_t) [0]
+	[RSP+19E0] 0x0                (size_t) [0]
+	[RSP+19E8] 0x0                (size_t) [0]
+	[RSP+19F0] 0x0                (size_t) [0]
+	[RSP+19F8] 0x0                (size_t) [0]
+	[RSP+1A00] 0x0                (size_t) [0]
+	[RSP+1A08] 0x0                (size_t) [0]
+	[RSP+1A10] 0x0                (size_t) [0]
+	[RSP+1A18] 0x0                (size_t) [0]
+	[RSP+1A20] 0x0                (size_t) [0]
+	[RSP+1A28] 0x0                (size_t) [0]
+	[RSP+1A30] 0x0                (size_t) [0]
+	[RSP+1A38] 0x0                (size_t) [0]
+	[RSP+1A40] 0x0                (size_t) [0]
+	[RSP+1A48] 0x0                (size_t) [0]
+	[RSP+1A50] 0x0                (size_t) [0]
+	[RSP+1A58] 0x0                (size_t) [0]
+	[RSP+1A60] 0x0                (size_t) [0]
+	[RSP+1A68] 0x0                (size_t) [0]
+	[RSP+1A70] 0x0                (size_t) [0]
+	[RSP+1A78] 0x0                (size_t) [0]
+	[RSP+1A80] 0x0                (size_t) [0]
+	[RSP+1A88] 0x0                (size_t) [0]
+	[RSP+1A90] 0x0                (size_t) [0]
+	[RSP+1A98] 0x0                (size_t) [0]
+	[RSP+1AA0] 0x0                (size_t) [0]
+	[RSP+1AA8] 0x0                (size_t) [0]
+	[RSP+1AB0] 0x0                (size_t) [0]
+	[RSP+1AB8] 0x0                (size_t) [0]
+	[RSP+1AC0] 0x0                (size_t) [0]
+	[RSP+1AC8] 0x0                (size_t) [0]
+	[RSP+1AD0] 0x0                (size_t) [0]
+	[RSP+1AD8] 0x0                (size_t) [0]
+	[RSP+1AE0] 0x0                (size_t) [0]
+	[RSP+1AE8] 0x0                (size_t) [0]
+	[RSP+1AF0] 0x0                (size_t) [0]
+	[RSP+1AF8] 0x0                (size_t) [0]
+	[RSP+1B00] 0x0                (size_t) [0]
+	[RSP+1B08] 0x0                (size_t) [0]
+	[RSP+1B10] 0x0                (size_t) [0]
+	[RSP+1B18] 0x0                (size_t) [0]
+	[RSP+1B20] 0x0                (size_t) [0]
+	[RSP+1B28] 0x0                (size_t) [0]
+	[RSP+1B30] 0x0                (size_t) [0]
+	[RSP+1B38] 0x0                (size_t) [0]
+	[RSP+1B40] 0x0                (size_t) [0]
+	[RSP+1B48] 0x0                (size_t) [0]
+	[RSP+1B50] 0x0                (size_t) [0]
+	[RSP+1B58] 0x0                (size_t) [0]
+	[RSP+1B60] 0x0                (size_t) [0]
+	[RSP+1B68] 0x0                (size_t) [0]
+	[RSP+1B70] 0x0                (size_t) [0]
+	[RSP+1B78] 0x0                (size_t) [0]
+	[RSP+1B80] 0x0                (size_t) [0]
+	[RSP+1B88] 0x0                (size_t) [0]
+	[RSP+1B90] 0x0                (size_t) [0]
+	[RSP+1B98] 0x0                (size_t) [0]
+	[RSP+1BA0] 0x0                (size_t) [0]
+	[RSP+1BA8] 0x0                (size_t) [0]
+	[RSP+1BB0] 0x0                (size_t) [0]
+	[RSP+1BB8] 0x0                (size_t) [0]
+	[RSP+1BC0] 0x0                (size_t) [0]
+	[RSP+1BC8] 0x0                (size_t) [0]
+	[RSP+1BD0] 0x0                (size_t) [0]
+	[RSP+1BD8] 0x0                (size_t) [0]
+	[RSP+1BE0] 0x0                (size_t) [0]
+	[RSP+1BE8] 0x0                (size_t) [0]
+	[RSP+1BF0] 0x0                (size_t) [0]
+	[RSP+1BF8] 0x0                (size_t) [0]
+	[RSP+1C00] 0x0                (size_t) [0]
+	[RSP+1C08] 0x0                (size_t) [0]
+	[RSP+1C10] 0x0                (size_t) [0]
+	[RSP+1C18] 0x0                (size_t) [0]
+	[RSP+1C20] 0x0                (size_t) [0]
+	[RSP+1C28] 0x0                (size_t) [0]
+	[RSP+1C30] 0x0                (size_t) [0]
+	[RSP+1C38] 0x0                (size_t) [0]
+	[RSP+1C40] 0x0                (size_t) [0]
+	[RSP+1C48] 0x0                (size_t) [0]
+	[RSP+1C50] 0x0                (size_t) [0]
+	[RSP+1C58] 0x0                (size_t) [0]
+	[RSP+1C60] 0x0                (size_t) [0]
+	[RSP+1C68] 0x0                (size_t) [0]
+	[RSP+1C70] 0x0                (size_t) [0]
+	[RSP+1C78] 0x0                (size_t) [0]
+	[RSP+1C80] 0x0                (size_t) [0]
+	[RSP+1C88] 0x0                (size_t) [0]
+	[RSP+1C90] 0x0                (size_t) [0]
+	[RSP+1C98] 0x0                (size_t) [0]
+	[RSP+1CA0] 0x0                (size_t) [0]
+	[RSP+1CA8] 0x0                (size_t) [0]
+	[RSP+1CB0] 0x0                (size_t) [0]
+	[RSP+1CB8] 0x0                (size_t) [0]
+	[RSP+1CC0] 0x0                (size_t) [0]
+	[RSP+1CC8] 0x0                (size_t) [0]
+	[RSP+1CD0] 0x0                (size_t) [0]
+	[RSP+1CD8] 0x0                (size_t) [0]
+	[RSP+1CE0] 0x0                (size_t) [0]
+	[RSP+1CE8] 0x0                (size_t) [0]
+	[RSP+1CF0] 0x0                (size_t) [0]
+	[RSP+1CF8] 0x0                (size_t) [0]
+	[RSP+1D00] 0x0                (size_t) [0]
+	[RSP+1D08] 0x0                (size_t) [0]
+	[RSP+1D10] 0x0                (size_t) [0]
+	[RSP+1D18] 0x0                (size_t) [0]
+	[RSP+1D20] 0x0                (size_t) [0]
+	[RSP+1D28] 0x0                (size_t) [0]
+	[RSP+1D30] 0x0                (size_t) [0]
+	[RSP+1D38] 0x0                (size_t) [0]
+	[RSP+1D40] 0x0                (size_t) [0]
+	[RSP+1D48] 0x0                (size_t) [0]
+	[RSP+1D50] 0x0                (size_t) [0]
+	[RSP+1D58] 0x0                (size_t) [0]
+	[RSP+1D60] 0x0                (size_t) [0]
+	[RSP+1D68] 0x0                (size_t) [0]
+	[RSP+1D70] 0x0                (size_t) [0]
+	[RSP+1D78] 0x0                (size_t) [0]
+	[RSP+1D80] 0x0                (size_t) [0]
+	[RSP+1D88] 0x0                (size_t) [0]
+	[RSP+1D90] 0x0                (size_t) [0]
+	[RSP+1D98] 0x0                (size_t) [0]
+	[RSP+1DA0] 0x0                (size_t) [0]
+	[RSP+1DA8] 0x0                (size_t) [0]
+	[RSP+1DB0] 0x0                (size_t) [0]
+	[RSP+1DB8] 0x0                (size_t) [0]
+	[RSP+1DC0] 0x0                (size_t) [0]
+	[RSP+1DC8] 0x0                (size_t) [0]
+	[RSP+1DD0] 0x0                (size_t) [0]
+	[RSP+1DD8] 0x0                (size_t) [0]
+
+MODULES:
+	XINPUT1_3.dll                  0x000000400000
+	X3DAudio1_7.dll                0x000059230000
+	amdenc64.dll                   0x000059290000
+	SkyrimSE.exe                   0x7FF647590000
+	DSOUND.DLL                     0x7FF89B330000
+	XAudio2_7.dll                  0x7FF89BB20000
+	gameoverlayrenderer64.dll      0x7FF89C310000
+	CrashLogger.dll                0x7FF89C4B0000
+	steamclient64.dll              0x7FF89C780000
+	AchievementInjector.dll        0x7FF8A2430000
+	d3dx9_42.dll                   0x7FF8AE3B0000
+	tier0_s64.dll                  0x7FF8AFA40000
+	MCMHelper.dll                  0x7FF8B0700000
+	vstdlib_s64.dll                0x7FF8B3800000
+	skse64_1_6_1170.dll            0x7FF8B4C30000
+	bink2w64.dll                   0x7FF911A50000
+	msdmo.dll                      0x7FF914650000
+	DINPUT8.dll                    0x7FF915BB0000
+	steam_api64.dll                0x7FF921460000
+	ResampleDmo.DLL                0x7FF9304E0000
+	OneCoreCommonProxyStub.dll     0x7FF93A030000
+	MSVCP140_CODECVT_IDS.dll       0x7FF93E0C0000
+	MPR.dll                        0x7FF93E830000
+	Windows.UI.dll                 0x7FF93EB30000
+	MSVCP140_ATOMIC_WAIT.dll       0x7FF93F500000
+	winmmbase.dll                  0x7FF940520000
+	AUDIOSES.DLL                   0x7FF9448B0000
+	MSVCP140.dll                   0x7FF944EC0000
+	VCRUNTIME140.dll               0x7FF944F50000
+	OneCoreUAPCommonProxyStub.dll  0x7FF945F40000
+	amdihk64.dll                   0x7FF946920000
+	inputhost.dll                  0x7FF9469D0000
+	amdxx64.dll                    0x7FF946BB0000
+	textinputframework.dll         0x7FF94AE10000
+	VCRUNTIME140_1.dll             0x7FF94AFE0000
+	atidxx64.dll                   0x7FF94AFF0000
+	WINMM.dll                      0x7FF94B020000
+	avrt.dll                       0x7FF94B440000
+	CoreUIComponents.dll           0x7FF94BE30000
+	dbghelp.dll                    0x7FF94C390000
+	WINHTTP.dll                    0x7FF94D770000
+	MMDevApi.dll                   0x7FF94D8D0000
+	d3d11.dll                      0x7FF94EAA0000
+	dcomp.dll                      0x7FF94ED00000
+	CoreMessaging.dll              0x7FF94F4D0000
+	Microsoft.Internal.WarpPal.dll 0x7FF94FBB0000
+	apphelp.dll                    0x7FF94FBE0000
+	wintypes.dll                   0x7FF950360000
+	uxtheme.dll                    0x7FF951520000
+	dxcore.dll                     0x7FF9516D0000
+	directxdatabasehelper.dll      0x7FF951740000
+	dxgi.dll                       0x7FF9517A0000
+	dwmapi.dll                     0x7FF9518F0000
+	resourcepolicyclient.dll       0x7FF951B80000
+	windows.storage.dll            0x7FF951F70000
+	HID.DLL                        0x7FF9527B0000
+	IPHLPAPI.DLL                   0x7FF952AC0000
+	VERSION.dll                    0x7FF952F00000
+	Secur32.dll                    0x7FF952F10000
+	kernel.appcore.dll             0x7FF953330000
+	SSPICLI.DLL                    0x7FF9535D0000
+	MSWSOCK.dll                    0x7FF953830000
+	MSASN1.dll                     0x7FF953B30000
+	bcrypt.dll                     0x7FF953D70000
+	CRYPTBASE.DLL                  0x7FF9540A0000
+	DEVOBJ.dll                     0x7FF9540B0000
+	CFGMGR32.dll                   0x7FF9540E0000
+	UMPDC.dll                      0x7FF9541A0000
+	powrprof.dll                   0x7FF9541C0000
+	profapi.dll                    0x7FF954400000
+	WINTRUST.dll                   0x7FF9544F0000
+	CRYPT32.dll                    0x7FF954580000
+	win32u.dll                     0x7FF954700000
+	KERNELBASE.dll                 0x7FF954730000
+	ucrtbase.dll                   0x7FF954AF0000
+	msvcp_win.dll                  0x7FF954D00000
+	bcryptPrimitives.dll           0x7FF954DB0000
+	gdi32full.dll                  0x7FF954E50000
+	shlwapi.dll                    0x7FF954F80000
+	sechost.dll                    0x7FF954FF0000
+	RPCRT4.dll                     0x7FF9550A0000
+	clbcatq.dll                    0x7FF9551C0000
+	SHELL32.dll                    0x7FF955280000
+	SETUPAPI.dll                   0x7FF955990000
+	IMM32.DLL                      0x7FF955E20000
+	MSCTF.dll                      0x7FF955F50000
+	combase.dll                    0x7FF956210000
+	WS2_32.dll                     0x7FF956630000
+	KERNEL32.DLL                   0x7FF9566D0000
+	msvcrt.dll                     0x7FF9567A0000
+	ole32.dll                      0x7FF956850000
+	OLEAUT32.dll                   0x7FF9569F0000
+	imagehlp.dll                   0x7FF956CF0000
+	PSAPI.DLL                      0x7FF956D30000
+	ADVAPI32.dll                   0x7FF956D40000
+	SHCORE.dll                     0x7FF956E00000
+	USER32.dll                     0x7FF956EE0000
+	GDI32.dll                      0x7FF9570B0000
+	ntdll.dll                      0x7FF957120000
+
+SKSE PLUGINS:
+	AchievementInjector.dll v0.0.1
+	CrashLogger.dll v1.14.1
+	MCMHelper.dll v1.5
+
+PLUGINS:
+	Light: 67	Regular: 16	Total: 83
+	[ 0]     Skyrim.esm
+	[ 1]     Update.esm
+	[ 2]     Dawnguard.esm
+	[ 3]     HearthFires.esm
+	[ 4]     Dragonborn.esm
+	[ 5]     ccasvsse001-almsivi.esm
+	[ 6]     ccbgssse001-fish.esm
+	[ 7]     cctwbsse001-puzzledungeon.esm
+	[ 8]     cceejsse001-hstead.esm
+	[ 9]     ccbgssse016-umbra.esm
+	[ A]     ccbgssse031-advcyrus.esm
+	[ B]     ccbgssse067-daedinv.esm
+	[ C]     ccbgssse025-advdsgs.esm
+	[ D]     cceejsse005-cave.esm
+	[ E]     ccafdsse001-dwesanctuary.esm
+	[ F]     SkyUI_SE.esp
+	[FE:  0] ccbgssse002-exoticarrows.esl
+	[FE:  1] ccbgssse003-zombies.esl
+	[FE:  2] ccbgssse004-ruinsedge.esl
+	[FE:  3] ccbgssse005-goldbrand.esl
+	[FE:  4] ccbgssse006-stendarshammer.esl
+	[FE:  5] ccbgssse007-chrysamere.esl
+	[FE:  6] ccbgssse010-petdwarvenarmoredmudcrab.esl
+	[FE:  7] ccbgssse011-hrsarmrelvn.esl
+	[FE:  8] ccbgssse012-hrsarmrstl.esl
+	[FE:  9] ccbgssse014-spellpack01.esl
+	[FE:  A] ccbgssse019-staffofsheogorath.esl
+	[FE:  B] ccbgssse020-graycowl.esl
+	[FE:  C] ccbgssse021-lordsmail.esl
+	[FE:  D] ccmtysse001-knightsofthenine.esl
+	[FE:  E] ccqdrsse001-survivalmode.esl
+	[FE:  F] ccqdrsse002-firewood.esl
+	[FE: 10] ccbgssse018-shadowrend.esl
+	[FE: 11] ccbgssse035-petnhound.esl
+	[FE: 12] ccfsvsse001-backpacks.esl
+	[FE: 13] cceejsse002-tower.esl
+	[FE: 14] ccedhsse001-norjewel.esl
+	[FE: 15] ccvsvsse002-pets.esl
+	[FE: 16] ccbgssse037-curios.esl
+	[FE: 17] ccbgssse034-mntuni.esl
+	[FE: 18] ccbgssse045-hasedoki.esl
+	[FE: 19] ccbgssse008-wraithguard.esl
+	[FE: 1A] ccbgssse036-petbwolf.esl
+	[FE: 1B] ccffbsse001-imperialdragon.esl
+	[FE: 1C] ccmtysse002-ve.esl
+	[FE: 1D] ccbgssse043-crosselv.esl
+	[FE: 1E] ccvsvsse001-winter.esl
+	[FE: 1F] cceejsse003-hollow.esl
+	[FE: 20] ccbgssse038-bowofshadows.esl
+	[FE: 21] ccbgssse040-advobgobs.esl
+	[FE: 22] ccbgssse050-ba_daedric.esl
+	[FE: 23] ccbgssse052-ba_iron.esl
+	[FE: 24] ccbgssse054-ba_orcish.esl
+	[FE: 25] ccbgssse058-ba_steel.esl
+	[FE: 26] ccbgssse059-ba_dragonplate.esl
+	[FE: 27] ccbgssse061-ba_dwarven.esl
+	[FE: 28] ccpewsse002-armsofchaos.esl
+	[FE: 29] ccbgssse041-netchleather.esl
+	[FE: 2A] ccedhsse002-splkntset.esl
+	[FE: 2B] ccbgssse064-ba_elven.esl
+	[FE: 2C] ccbgssse063-ba_ebony.esl
+	[FE: 2D] ccbgssse062-ba_dwarvenmail.esl
+	[FE: 2E] ccbgssse060-ba_dragonscale.esl
+	[FE: 2F] ccbgssse056-ba_silver.esl
+	[FE: 30] ccbgssse055-ba_orcishscaled.esl
+	[FE: 31] ccbgssse053-ba_leather.esl
+	[FE: 32] ccbgssse051-ba_daedricmail.esl
+	[FE: 33] ccbgssse057-ba_stalhrim.esl
+	[FE: 34] ccbgssse066-staves.esl
+	[FE: 35] ccbgssse068-bloodfall.esl
+	[FE: 36] ccbgssse069-contest.esl
+	[FE: 37] ccvsvsse003-necroarts.esl
+	[FE: 38] ccvsvsse004-beafarmer.esl
+	[FE: 39] ccffbsse002-crossbowpack.esl
+	[FE: 3A] ccbgssse013-dawnfang.esl
+	[FE: 3B] ccrmssse001-necrohouse.esl
+	[FE: 3C] ccedhsse003-redguard.esl
+	[FE: 3D] cceejsse004-hall.esl
+	[FE: 3E] cckrtsse001_altar.esl
+	[FE: 3F] cccbhsse001-gaunt.esl
+	[FE: 40] _ResourcePack.esl
+	[FE: 41] MCMHelper.esp
+	[FE: 42] AchievementInjector.esp
