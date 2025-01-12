@@ -1,0 +1,38 @@
+SKSE64 runtime: initialize (version = 2.2.6 01064920 01DB64F4240E95DA, os = 6.2 (9200))
+imagebase = 00007FF647590000
+reloc mgr imagebase = 00007FF647590000
+config path = c:\program files (x86)\steam\steamapps\common\Skyrim Special Edition\Data\SKSE\skse.ini
+plugin directory = c:\program files (x86)\steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\
+scanning plugin directory c:\program files (x86)\steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\
+checking plugin AchievementInjector.dll
+checking plugin CrashLogger.dll
+checking plugin MCMHelper.dll
+checking plugin msdia140.dll
+plugin msdia140.dll (00000000  00000000) no version data 0 (handle 0)
+loading plugin "AchievementInjector"
+registering plugin listener for SKSE at 1 of 5
+plugin AchievementInjector.dll (00000001 AchievementInjector 00000010) loaded correctly (handle 1)
+loading plugin "CrashLogger"
+plugin CrashLogger.dll (00000001 CrashLogger 010E0010) loaded correctly (handle 2)
+loading plugin "MCMHelper"
+registering plugin listener for SKSE at 3 of 5
+plugin MCMHelper.dll (00000001 MCMHelper 01050000) loaded correctly (handle 3)
+dispatch message (0) to plugin listeners
+sending message type 0 to plugin 1
+sending message type 0 to plugin 3
+dispatched message.
+dispatch message (1) to plugin listeners
+sending message type 1 to plugin 1
+sending message type 1 to plugin 3
+dispatched message.
+init complete
+hooked dinput
+dispatch message (6) to plugin listeners
+sending message type 6 to plugin 1
+sending message type 6 to plugin 3
+dispatched message.
+Reading translations from Interface\Translations\SkyUI_SE_ENGLISH.txt...
+Reading translations from Interface\Translations\MCMHelper_ENGLISH.txt...
+Reading translations from Interface\Translations\AchievementInjector_ENGLISH.txt...
+dispatch message (8) to plugin listeners
+sending message type 8 to plugin 1
